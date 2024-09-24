@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.ToDoApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3c3c3c;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.header {
+    background-color: #ffebcd;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #4b4b4b;
+}
+
+.btn {
+    background-color: #9ad73f;
+    padding: 12px 20px;
+    width: 100px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #88c42f;
+}
+
+.label {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #9ad73f;
+    outline: none;
+}
+
+.list {
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.content {
+    padding: 15px;
+    background-color: #91bc7e; /* Original background color */
+    color: black;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+}
+
+.content:hover {
+    background-color: #a8d3b2; /* Lighter background on hover */
+    color: #2f2f2f; /* Darker text color on hover */
+}
+
+
+.dltBtn, .edtBtn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dltBtn {
+    background-color: #976565;
+    color: white;
+}
+
+.dltBtn:hover {
+    background-color: #845656;
+}
+
+.edtBtn {
+    background-color: #ffe0b2;
+    color: #4b4b4b;
+}
+
+.edtBtn:hover {
+    background-color: #ffd54f;
+}
+
+.btnAll {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .ToDoApp {
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+
+    .dltBtn, .edtBtn {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

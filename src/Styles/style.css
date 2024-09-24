@@ -1,0 +1,34 @@
+.ToDoApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkseagreen;
+    padding: 15px;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    background-color: rgb(200, 200, 164);
+}
+
+.header {
+    background-color: beige;
+    width: 100%; 
+    max-width: 1200px; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.2em; 
+        padding: 15px; 
+    }
+    
+    .ToDoApp {
+        padding: 10px; 
+    }
+}
